@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Pinterest Pin</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-styles.css">
+    <link rel="stylesheet" href="styles/prueba.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <header>
+        <h3>Rocketerest</h3>
+  
+        <nav>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Negócios</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Blog</a></li>
+          </ul>
+  
+          <div class="buttons">
+            <button class="login">Log in</button>
+            <button class="signup">Sign up</button>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <form class="form">
+            <h2>Registrar Receta</h2>
+
+            <label for="nombre">Título</label>
+            <input type="text" id="nombre" class="box">
+
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" class="box" cols="30" rows="10"></textarea>
+
+            <label for="ingredientes">Ingredientes</label>
+            <textarea id="ingredientes" class="box" cols="30" rows="10"></textarea>
+
+            <label for="instrucciones">Instrucciones</label>
+            <textarea id="instrucciones" class="box" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <div class="infoCont">
+                <div class="form-group">
+                    <label for="pinImage" class="img-1">Elegir archivo a subir</label>
+                    <input type="file" class="form-control-file" id="pinImage" required>
+                    <img id="imagePreview" src="" alt="Image Preview" class="img-fluid mt-3">
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    
+   
+    <script src="scriptCreate.js"></script>
+</body>
+</html>
